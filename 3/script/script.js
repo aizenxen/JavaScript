@@ -4,6 +4,7 @@ console.log("ПЕРВОЕ ЗАДАНИЕ")
 
 let input = prompt("Каков ваш пол? М или Ж: ")
 function polDefine(pol) {
+    pol = pol.toUpperCase();
     if (pol == 'М') {
         return "Ваш пол мужской"
     } else if (pol == 'Ж') {
@@ -92,16 +93,13 @@ let checkType = function(a) {
     console.log(`Тип данных параметра: ${type}`)
 }
 
-checkType(42)
+checkType(54)
 checkType("Привет")
 checkType(true)
 
 /*еще одно по стрелочным*/
 console.log("Стрелочные функции")
-
-function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
+const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 function start() {
     let number1 = randomNumber(1, 100)
@@ -125,4 +123,4 @@ function start() {
     }
 }
 
-console.log(start())
+start()
