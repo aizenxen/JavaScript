@@ -99,10 +99,10 @@ console.log(checkType(true))
 
 /*еще одно по стрелочным*/
 console.log("СТРЕЛОЧНЫЕ")
-let randomNumber = Math.floor(Math.random() * 100 % 20 + 10)
+let random = () => Math.floor(Math.random() * 100 % 20 + 10)
 
-let num1 = randomNumber
-let num2 = randomNumber
+let num1 = random()
+let num2 = random()
 
 let question = `Сколько будет ${num1} + ${num2}?`
 let answer = prompt(question)
