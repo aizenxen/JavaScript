@@ -72,7 +72,7 @@ while (continueTest) {
         console.log("Неправильно. Правильный ответ: " + correctAnswer)
     }
 
-    const continuePrompt = prompt("Хотите продолжить тест? (Введите 'y' для продолжения)");
+    const continuePrompt = prompt("Хотите продолжить тест? (Введите 'y' для продолжения)")
     continueTest = continuePrompt.toLowerCase() == "y"
 }
 

@@ -1,11 +1,10 @@
-/*1*/
-
+    /*1*/
     console.log("ПЕРВОЕ ЗАДАНИЕ")
-    let number = prompt("Введите число");
+    let number = prompt("Введите число")
     if (isNaN(number)) {
-        document.querySelector(".num").innerHTML = "Это не число!";
+        document.querySelector(".num").innerHTML = "Это не число!"
     } else {
-        document.querySelector(".num").innerHTML = "Это число!";
+        document.querySelector(".num").innerHTML = "Это число!"
         
     /*2*/
         console.log("ВТОРОЕ ЗАДАНИЕ")
@@ -27,7 +26,7 @@
     if (isNaN(a) || isNaN(b) || isNaN(c)) {
         alert("Пожалуйста, введите числовые значения для коэффициентов")
     } else if (a === 0) {
-        console.log("Коэфф a равен нулю, это не явл квадратным уравнением, введите натуральные числа)");
+        console.log("Коэфф a равен нулю, это не явл квадратным уравнением, введите натуральные числа)")
     } else {
         let D = b ** 2 - 4 * a * c
         if (D > 0) {
@@ -37,7 +36,7 @@
             console.log(`Первый корень: x1 = ${x1}\nВторой корень: x2 = ${x2}`)
         } else if (D === 0) {
             console.log("Уравнение имеет 1 корень")
-            let x = -b / (2 * a);
+            let x = -b / (2 * a)
             console.log(`Корень: x = ${x}`)
         } else {
             console.log("Уравнение не имеет корней")
@@ -75,25 +74,25 @@
         switch (method) {
             case 1:
                 let sum1 = Math.max(num1 + num2, num1 + num3, num1 + num4, num2 + num3, num2 + num4, num3 + num4)
-                console.log(`Максимальная сумма в паре: ${sum1}`);
-                break;
+                console.log(`Максимальная сумма в паре: ${sum1}`)
+                break
 
             case 2:
-                let maxSum = num1 + num2;
+                let maxSum = num1 + num2
                 if (num1 + num3 > maxSum) {
-                    maxSum = num1 + num3;
+                    maxSum = num1 + num3
                 }
                 if (num1 + num4 > maxSum) {
-                    maxSum = num1 + num4;
+                    maxSum = num1 + num4
                 }
                 if (num2 + num3 > maxSum) {
-                    maxSum = num2 + num3;
+                    maxSum = num2 + num3
                 }
                 if (num2 + num4 > maxSum) {
-                    maxSum = num2 + num4;
+                    maxSum = num2 + num4
                 }
                 if (num3 + num4 > maxSum) {
-                    maxSum = num3 + num4;
+                    maxSum = num3 + num4
                 }
                 console.log("Максимальная сумма: " + maxSum)
                 break

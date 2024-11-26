@@ -1,10 +1,11 @@
 /*1*/
+
 console.log("ФУНКЦИИ")
 console.log("ПЕРВОЕ ЗАДАНИЕ")
 
 let input = prompt("Каков ваш пол? М или Ж: ")
 function polDefine(pol) {
-    pol = pol.toUpperCase();
+    pol = pol.toUpperCase()
     if (pol == 'М') {
         return "Ваш пол мужской"
     } else if (pol == 'Ж') {
@@ -87,40 +88,27 @@ console.log(Greetings(a, b))
 /*5*/
 console.log("ПЯТОЕ ЗАДАНИЕ")
 
-
 let checkType = function(a) {
-    let type = typeof a
-    console.log(`Тип данных параметра: ${type}`)
+    return typeof a
 }
 
-checkType(54)
-checkType("Привет")
-checkType(true)
+console.log(checkType(54))
+console.log(checkType("Привет"))
+console.log(checkType(checkType))
+console.log(checkType(true))
 
 /*еще одно по стрелочным*/
-console.log("Стрелочные функции")
-const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+console.log("СТРЕЛОЧНЫЕ")
+let randomNumber = Math.floor(Math.random() * 100 % 20 + 10)
 
-function start() {
-    let number1 = randomNumber(1, 100)
-    let number2 = randomNumber(1, 100)
+let num1 = randomNumber
+let num2 = randomNumber
 
-    let correctAnswer = number1 + number2
-    let question = `Сколько будет ${number1} + ${number2}?`
-    let answer = prompt(question)
+let question = `Сколько будет ${num1} + ${num2}?`
+let answer = prompt(question)
 
-    if (answer === null) {
-        console.log("Тренировка прервана.")
-        return
-    }
-
-    answer = parseInt(answer)
-
-    if (answer == correctAnswer) {
-        console.log("Правильно! Ответ " + correctAnswer + ".")
-    } else {
-        console.log("Неправильно. Правильный ответ: " + correctAnswer + ".")
-    }
+if (parseInt(answer) === num1 + num2) {
+    console.log("Правильно")
+} else {
+    console.log("Неправильно((")
 }
-
-start()
