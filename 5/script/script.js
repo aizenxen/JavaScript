@@ -1,6 +1,6 @@
 /*1*/
 console.log("ПЕРВОЕ ЗАДАНИЕ")
-kk = new Array()
+let kk = []
 let summa = 0
 
 for (let i = 0; i < 5; i++) {
@@ -10,20 +10,21 @@ for (let i = 0; i < 5; i++) {
 
 let newAr = kk.filter((index) => index > 0 && index < 10)
 let sum = newAr.reduce((acc, num) => acc + num, 0)
-console.log(sum)
+console.log("Ответ: ", sum)
 
 /*2*/
 console.log("ВТОРОЕ ЗАДАНИЕ")
 function check(num) {
+    if (num.length === 0) return "Массив пуст"
     return num.every(index => index % 2 === 0) ? "Все числа четные" : "Есть нечетные числа"
 }
 
-numbers = new Array()
+let numbers = []
 for (let i = 0; i < 2; i++) {
     numbers[i] = Math.floor(Math.random() * 40 - 20)
     console.log(numbers[i])
 }
-console.log(check(numbers))
+console.log("Ответ: ", check(numbers))
 
 /*3*/
 console.log("ТРЕТЬЕ ЗАДАНИЕ")
@@ -32,12 +33,12 @@ function filter(nn) {
     return nn.filter(index => index % 5 === 0)
 }
 
-nns = new Array()
+let nns = []
 for (let i = 0; i < 20; i++) {
     nns[i] = Math.floor(Math.random() * 40 - 20)
     console.log(nns[i])
 }
-console.log(filter(nns))
+console.log("Ответ: ", filter(nns))
 
 /*4*/
 console.log("ЧЕТВЕРТОЕ ЗАДАНИЕ")
@@ -48,19 +49,19 @@ function aver(ss) {
     return average.toFixed(1)
 }
 
-nums = new Array()
+let nums = []
 for (let i = 0; i < 3; i++) {
     nums[i] = Math.floor(Math.random() * 40 - 20)
     console.log(nums[i])
 }
-console.log(aver(nums))
+console.log("Ответ: ", aver(nums))
 
 /*5*/
 console.log("ПЯТОЕ ЗАДАНИЕ")
 let urls = ["ftp://example.com", "http://mywebsite.com", "http://testsite.org", "https://securepage.com"]
 let newurls = urls.filter(url => url.startsWith("http://"))
 
-console.log(newurls)
+console.log("Ответ: ", newurls)
 
 /*6*/
 console.log("ШЕСТОЕ ЗАДАНИЕ")
