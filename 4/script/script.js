@@ -12,8 +12,8 @@ let messages = {
     }
 }
 
-let num1 = Math.floor(Math.random() * 40 - 20)
-let num2 = Math.floor(Math.random() * 40 - 20)
+let num1 = Math.floor(Math.random() * 16)
+let num2 = Math.floor(Math.random() * 16)
 let userAns = parseInt(prompt(`Вычислите ${num1} * ${num2}`), 10)
 let correctAns = num1 * num2
 

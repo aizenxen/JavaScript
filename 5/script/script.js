@@ -4,7 +4,7 @@ let kk = []
 let summa = 0
 
 for (let i = 0; i < 7; i++) {
-    kk[i] = Math.floor(Math.random() * 40 - 20)
+    kk[i] = Math.floor(Math.random() * 16) - 15
     console.log(kk[i])
 }
 
@@ -21,7 +21,7 @@ function check(num) {
 
 let numbers = []
 for (let i = 0; i < 3; i++) {
-    numbers[i] = Math.floor(Math.random() * 40 - 20)
+    numbers[i] = Math.floor(Math.random() * 16)
     console.log(numbers[i])
 }
 console.log("Ответ: ", check(numbers))
@@ -35,7 +35,7 @@ function filter(nn) {
 
 let nns = []
 for (let i = 0; i < 15; i++) {
-    nns[i] = Math.floor(Math.random() * 40 - 20)
+    nns[i] = Math.floor(Math.random() * 16)
     console.log(nns[i])
 }
 console.log("Ответ: ", filter(nns))
@@ -51,7 +51,7 @@ function aver(ss) {
 
 let nums = []
 for (let i = 0; i < 4; i++) {
-    nums[i] = Math.floor(Math.random() * 40 - 20)
+    nums[i] = Math.floor(Math.random() * 16)
     console.log(nums[i])
 }
 console.log("Ответ: ", aver(nums))
