@@ -3,7 +3,7 @@ console.log("ПЕРВОЕ ЗАДАНИЕ")
 let kk = []
 let summa = 0
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 7; i++) {
     kk[i] = Math.floor(Math.random() * 40 - 20)
     console.log(kk[i])
 }
@@ -20,7 +20,7 @@ function check(num) {
 }
 
 let numbers = []
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 3; i++) {
     numbers[i] = Math.floor(Math.random() * 40 - 20)
     console.log(numbers[i])
 }
@@ -34,7 +34,7 @@ function filter(nn) {
 }
 
 let nns = []
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 15; i++) {
     nns[i] = Math.floor(Math.random() * 40 - 20)
     console.log(nns[i])
 }
@@ -50,7 +50,7 @@ function aver(ss) {
 }
 
 let nums = []
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
     nums[i] = Math.floor(Math.random() * 40 - 20)
     console.log(nums[i])
 }
