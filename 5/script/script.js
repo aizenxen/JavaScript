@@ -4,7 +4,7 @@ let kk = []
 let summa = 0
 
 for (let i = 0; i < 7; i++) {
-    kk[i] = Math.floor(Math.random() * 16) - 15
+    kk[i] = Math.floor(Math.random() * 31) - 15
     console.log(kk[i])
 }
 
@@ -16,7 +16,7 @@ console.log("Ответ: ", sum)
 console.log("ВТОРОЕ ЗАДАНИЕ")
 function check(num) {
     if (num.length === 0) return "Массив пуст"
-    return num.every(index => index % 2 === 0) ? "Все числа четные" : "Есть нечетные числа"
+    return num.every(index => index % 2 === 0) ? "true" : "false"
 }
 
 let numbers = []
