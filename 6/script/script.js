@@ -22,38 +22,17 @@ let reg = /^[a-zA-Z_$][a-zA-Z0-9_$]*$/
         alert("Вы не ввели название переменной(")
     }
 
-/*3 - мин и макс*/
+/*3 - буквы цифры*/
 console.log("ТРЕТЬЕ ЗАДАНИЕ")
-function find_max(a, b, c) {
-    return Math.max(a, b, c);
-}
-function find_min(a, b, c) {
-    return Math.min(a, b, c);
-}
-let a = parseInt(prompt('Введите первое число'))
-let b = parseInt(prompt('Введите второе число'))
-let c = parseInt(prompt('Введите еще одно число'))
+const usinput = prompt("Введите строку, состоящую только из букв и цифр:").trim()
+const regex = /^[a-zA-Z0-9]+$/
 
-if (isNaN(a)) {
-    alert('Первое число не явл числом')
-} else if (isNaN(b)) {
-    alert('Второе число не явл числом')
-} else if (isNaN(c)) {
-    alert('Третье число не явл числом')
+if (!usinput) { 
+    console.log("Строка пустая или содержит только пробелы")
+} else if (regex.test(usinput)) {
+    console.log("Строка состоит только из букв и цифр")
 } else {
-    alert('Все числа корректны, едем дальше')
-
-    let chislo = prompt('Введите 1, чтобы найти макс число, если мин - введите 2')
-    switch (chislo) {
-        case '1':
-            alert(find_max(a, b, c))
-            break
-        case '2':
-            alert(find_min(a, b, c))
-            break
-        default:
-            alert('Введите 1 или 2')
-    }
+    console.log("Строка содержит недопустимые символы")
 }
 
 /*4 - без спецсимволов и цифр и длина не менее 10 симв*/
@@ -69,7 +48,7 @@ if (result != null) {
 
 /*5 - колво букв и цифр*/
 console.log("ПЯТОЕ ЗАДАНИЕ")
-let strk = prompt('введите строку')
+let strk = prompt('Введите строку')
 let strletters = strk.match(/[a-zA-Z]/g) || []
 let kolvo_digital = strk.match(/[0-9]/g) || []
 console.log('букв столько: ' + strletters.length + '   цифр столько: ' + kolvo_digital.length)

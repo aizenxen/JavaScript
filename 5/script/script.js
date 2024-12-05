@@ -16,7 +16,7 @@ console.log("Ответ: ", sum)
 console.log("ВТОРОЕ ЗАДАНИЕ")
 function check(num) {
     if (num.length === 0) return "Массив пуст"
-    return num.every(index => index % 2 === 0) ? "true" : "false"
+    return num.every(index => index % 2 === 0)
 }
 
 let numbers = []
