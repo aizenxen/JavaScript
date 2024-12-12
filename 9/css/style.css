@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}  
+
+h2 {
+    text-align: center; 
+    margin-top: 3rem;
+    margin-bottom: 1.5rem; 
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 3rem 0; 
+    margin: 1rem 0;
+    background-color: rgba(90, 80, 235, 0.089); 
+    color: #ffffff;
+}
+
+.card {
+    width: 18rem;
+    margin: 0.5rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card img {
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+table {
+    margin: 0 auto;
+}
+
+td, th {
+    padding: 10px 15px;
+    text-align: center; 
+    border: 1px solid #ddd; 
+}
+
+tr:last-child td {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
